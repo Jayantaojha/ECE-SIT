@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+#container{
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 30vw;
+    height: 72vh;
+    border-radius: 8px;
+
+}
+
+#container input{
+    padding: 10px 5px;
+    width: 90%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+#container button{
+    width: 90%;
+    padding: 10px;
+    background-color: #0f207494;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#container button:hover{
+    background-color: #0f1f74;
+}
+
+
+#signup{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: yellow; */
+    width: 100%;
+    padding: 0px 40px;
+}
+
+
+/* style for mobile devices */
+
+@media only screen and (max-width: 600px) {
+
+    h1{
+        font-size: x-large;
+    }
+
+    img{
+        width: 120px;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: 100vh;
+        background-color: #f2f2f2;
+    }
+
+    #container{
+        padding: 0px 20px;
+        margin-top: 10vh;
+        width: 90vw;
+        height: 70vh;
+    }
+
+    #signup a, p{
+        font-size: small;
+    }
+
+}

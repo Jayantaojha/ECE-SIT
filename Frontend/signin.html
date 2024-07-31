@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <link rel="stylesheet" href="signin.css">
+
+    <script src="signin.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <h1>Student Registration Form</h1>
+
+            <div class="section">
+                <h2>Basic Information</h2>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="roll-number">Roll Number</label>
+                <input type="text" id="roll-number" name="roll-number" required>
+
+                <label for="registration-number">Registration Number</label>
+                <input type="text" id="registration-number" name="registration-number" required>
+
+                <label for="email">Email Id</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="dob">Blood Group</label>
+                <input type="text" id="bloodgroup" name="bloodgroup" required>
+
+                <label for="address">Permanent Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+            </div>
+
+            <div class="section">
+                <h2>Academic Background</h2>
+
+                <label for="registration-card">Upload Registration Card (B.Tech)</label>
+                <input type="file" id="registration-card" name="registration-card" required>
+
+                <h3>Class 10th</h3>
+                <label for="school-10th">School Name</label>
+                <input type="text" id="school-10th" name="school-10th" required>
+
+                <label for="board-10th">Board Name</label>
+                <input type="text" id="board-10th" name="board-10th" required>
+
+                <label for="marks-10th">Marks Obtained</label>
+                <input type="number" id="marks-10th" name="marks-10th" required>
+
+                <label for="marksheet-10th">Upload Class 10th Marksheet</label>
+                <input type="file" id="marksheet-10th" name="marksheet-10th" required>
+
+                <h3>Class 12th/Diploma</h3>
+                <label for="school-12th">School Name</label>
+                <input type="text" id="school-12th" name="school-12th" required>
+
+                <label for="board-12th">Board Name</label>
+                <input type="text" id="board-12th" name="board-12th" required>
+
+                <label for="marks-12th">Marks Obtained</label>
+                <input type="number" id="marks-12th" name="marks-12th" required>
+
+                <label for="marksheet-12th">Upload Class 12th/Diploma Marksheet</label>
+                <input type="file" id="marksheet-12th" name="marksheet-12th" required>
+            </div>
+
+            <div class="section">
+                <h2>Other Details</h2>
+
+                <label for="interests">Interests</label>
+                <textarea id="interests" name="interests" rows="3"></textarea>
+
+                <label>Do you have any Scholarships?</label>
+                <div class="scholarship-radio">
+                    <input type="radio" id="scholarship-yes" name="scholarship" value="Yes">
+                    <label for="scholarship-yes">Yes</label>
+                    <input type="radio" id="scholarship-no" name="scholarship" value="No">
+                    <label for="scholarship-no">No</label>
+                </div>
+
+                <label for="scholarship-details">If yes, mention below</label>
+                <textarea id="scholarship-details" name="scholarship-details" rows="3"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,10 +1,18 @@
 // Accessing elements from the index.html file
 const body = document.querySelector('body');
 const login = document.querySelector('#login-btn');
+const reachus = document.querySelector('#reachus-btn');
+const gallery = document.querySelector('#gallery-btn');
+const internal = document.querySelector('#internal-btn');
+
 const menubar = document.querySelector('#menu-bar');
 
 login.addEventListener('click', () => {
     window.location.href = 'login.html';
+});
+
+reachus.addEventListener('click', () => {
+    window.location.href = 'reachus.html';
 });
 
 function createNavElements() {
@@ -60,8 +68,8 @@ function createNavElements() {
     // Create the links
     const links = [
         { href: '#', text: 'RESEARCH' },
-        { href: '#', text: 'GALLERY' },
-        { href: '#', text: 'REACH US' }
+        { href: 'gallery.html', text: 'GALLERY' },
+        { href: 'reachus.html', text: 'REACH US' }
     ];
 
     links.forEach(linkData => {
